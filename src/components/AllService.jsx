@@ -1,4 +1,4 @@
 const AllService = () => {
-  return <div></div>;
+  return <div>All Service</div>;
 };
 export default AllService;

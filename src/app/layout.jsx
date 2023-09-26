@@ -1,5 +1,8 @@
 import './globals.css'
 
+import SiteNavBar from '@/components/SiteNavBar'
+import Footer from '@/components/Footer'
+
 
 export const metadata = {
   title: 'Agency Web Application',
@@ -9,7 +12,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='font-body'>
+        <div className="bg-white text-black">
+          <SiteNavBar />
+          {children}
+          <Footer />
+        </div>
+      </body>
     </html>
   )
 }

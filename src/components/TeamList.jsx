@@ -1,4 +1,4 @@
 const TeamList = () => {
-  return <div></div>;
+  return <div>Team List</div>;
 };
 export default TeamList;

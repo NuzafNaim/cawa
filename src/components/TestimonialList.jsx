@@ -1,4 +1,4 @@
 const TestimonialList = () => {
-  return <div></div>;
+  return <div>Testimonial List</div>;
 };
 export default TestimonialList;
