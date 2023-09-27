@@ -1,3 +1,5 @@
+"use client"
+
 import { FaFacebookF } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
@@ -31,7 +33,7 @@ const Footer = () => {
         </div>
         <div>
         <p className="font-semibold text-xl mb-2">Address</p>
-        <p className="text-lg  max-w-xs">Design Agency Head Office. Airport Road United Arab Emirate</p>
+        <p className="text-lg font-thin max-w-xs">Design Agency Head Office. Airport Road United Arab Emirate</p>
         </div>
       </div>
       <div className="text-lg">Copyright Design Agency 2022</div>

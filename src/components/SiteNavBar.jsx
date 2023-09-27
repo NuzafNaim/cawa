@@ -1,10 +1,11 @@
+"use client"
 import { FiChevronDown } from 'react-icons/fi';
 
 const SiteNavBar = () => {
   return <header className="container mx-auto mt-4 py-4 text-black"><div className="flex justify-between items-center space-b">
-    <div className="p-3">
+ 
       <p className="font-bold text-xl"><a href="/">Design<span className="text-sec">AGENCY</span></a></p>
-    </div>
+    
     <nav className='font-medium'>
       <ul className="flex flex-row items-center gap-6">
         <li className='text-lg'><a href="/">Home</a></li>

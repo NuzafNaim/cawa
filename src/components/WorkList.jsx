@@ -1,4 +1,6 @@
 import { BsArrowRight } from 'react-icons/bs';
+import { GrGroup } from 'react-icons/gr';
+
 
 
 const WorkList = () => {
@@ -11,10 +13,8 @@ const WorkList = () => {
       {/* TOP WORKLIST */}
       <div className='flex gap-11'>
         <div className="group">
-          <div className='px-6 py-20 hover:shadow-lg group-hover:rounded-4xl'>
-            <div className='mb-3'>
-              <div className=""><img src="/img/icons/Activity.png" alt="" /></div>
-            </div>
+          <div className='px-6 py-20 hover:shadow-lg group-hover:rounded-4xl transition-all delay-150'>
+          <div className='bg-secbrand h-24 w-24 rounded-2xl flex items-center justify-center text-4xl mb-5'><GrGroup /></div>
             <div>
               <p className="font-semibold text-2xl mb-5">Grow Your Business</p>
               <p className="text-lg mb-10">We help identify the best ways to improve your business</p>
