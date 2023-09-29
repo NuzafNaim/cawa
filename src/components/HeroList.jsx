@@ -1,3 +1,4 @@
+import Image from "next/image";
 import BrandList from "./BrandList";
 
 const HeroList = () => {
@@ -9,11 +10,11 @@ const HeroList = () => {
         <button className="flex flex-row items-center gap-1 py-3 px-5 border-2 border-brand bg-brand rounded-lg text-lg text-white">Get Started</button>
       </div>
       <div>
-        <div className='grid grid-cols-7 grid-rows-5 gap-3'>
-          <div className="grid col-span-5 row-span-3"><img className="w-full h-full object-cover rounded-lg" src="/img/hero/hero_1.png" alt="" /></div>
-          <div className="grid col-span-2 row-span-3"><img className="w-full h-full object-cover rounded-lg"  src="/img/hero/hero_2.png" alt="" /></div>
-          <div className="grid col-span-3 row-span-2"><img className="w-full h-full object-cover rounded-lg"  src="/img/hero/hero_3.png" alt="" /></div>
-          <div className="grid col-span-4 row-span-2"><img className="w-full h-full object-cover rounded-lg"  src="/img/hero/hero_4.png" alt="" /></div>
+        <div className='grid grid-cols-7 gap-4'>
+          <div className="grid col-span-5"><Image className="w-full h-full object-cover rounded-lg" src="/img/hero/hero_1.png" alt="" width="408" height="271" /></div>
+          <div className="grid col-span-2"><Image className="w-full h-full object-cover rounded-lg"  src="/img/hero/hero_2.png" alt="" width="180" height="271" /></div>
+          <div className="grid col-span-3"><Image className="w-full h-full object-cover rounded-lg"  src="/img/hero/hero_3.png" alt="" width="246" height="164" /></div>
+          <div className="grid col-span-4"><Image className="w-full h-full object-cover rounded-lg"  src="/img/hero/hero_4.png" alt="" width="345" height="164" /></div>
         </div>
       </div>
     </div>
