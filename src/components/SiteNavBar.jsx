@@ -17,6 +17,7 @@ const SiteNavBar = () => {
         <li><button className="flex flex-row items-center gap-1 py-1 px-4 border-2 border-brand bg-brand rounded-lg text-lg text-white">Register</button></li>
       </ul>
     </nav>
-  </div></header>;
+  </div>
+  </header>;
 };
 export default SiteNavBar;
