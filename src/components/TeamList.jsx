@@ -4,8 +4,7 @@ import { FaInstagram } from "react-icons/fa6";
 import Image from "next/image";
 
 const TeamList = () => {
-  return <section>
-     <div className="container mx-auto py-16 text-base">
+  return <section className="container mx-auto py-16 text-base">
       <div>
       <p className="uppercase text-brand font-medium mb-4">Our Team Member</p>
       <p className="font-semibold text-3xl max-w-lg mb-12">Check our awesome team members</p>
@@ -33,7 +32,6 @@ const TeamList = () => {
           <p className="font-semibold text-3xl pb-12">Devon Lane</p>
         </div>
       </div>
-    </div>
-  </section>;
+    </section>;
 };
 export default TeamList;

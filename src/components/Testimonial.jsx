@@ -1,7 +1,7 @@
-import Image from 'next/image'
+import Image from "next/image"
 
 const Testimonial = () => {
-    return <div className="container mx-auto py-16 text-base">
+    return <section className="container mx-auto py-16 text-base">
         <div>
             <p className="uppercase text-brand font-medium mb-4">Testimonial List</p>
             <p className="font-semibold text-3xl max-w-lg mb-12">Better Agency/SEO Solution At Your Fingertips</p>
@@ -74,6 +74,6 @@ const Testimonial = () => {
                 <p className='text-[#16px]'>Backend Developer</p>
             </div>
         </div>
-    </div>;
+    </section>;
 };
 export default Testimonial;

@@ -1,6 +1,6 @@
 import Image from "next/image";
 const FeaturedProject = () => {
-  return <div className="bg-[#F0FDF4]">
+  return <section className="bg-[#F0FDF4]">
     <div className="container mx-auto py-16 text-base">
       <div>
       <p className="uppercase text-brand font-medium mb-4">Featured Project</p>
@@ -36,6 +36,6 @@ const FeaturedProject = () => {
       </div>
     </div>
     </div>
-  </div>;
+  </section>;
 };
 export default FeaturedProject;

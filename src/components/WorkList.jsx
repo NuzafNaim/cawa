@@ -4,8 +4,7 @@ import { GrGroup } from 'react-icons/gr';
 
 
 const WorkList = () => {
-  return <div>
-    <div className="container mx-auto my-16 text-base">
+  return <section className="container mx-auto my-16 text-base">
       <div>
         <p className="uppercase text-brand font-medium mb-4">Work List</p>
         <p className="font-semibold text-3xl max-w-lg mb-6">We provide the Perfect Solution to your business growth</p>
@@ -47,7 +46,6 @@ const WorkList = () => {
           </div>
         </div>
       </div>
-    </div>
-  </div>;
+    </section>;
 };
 export default WorkList;
