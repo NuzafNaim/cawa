@@ -32,6 +32,6 @@ const TeamList = () => {
           <p className="font-semibold text-3xl pb-12">Devon Lane</p>
         </div>
       </div>
-    </section>;
+      </section>;
 };
 export default TeamList;

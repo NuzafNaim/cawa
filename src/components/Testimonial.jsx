@@ -6,7 +6,7 @@ const Testimonial = () => {
             <p className="uppercase text-brand font-medium mb-4">Testimonial List</p>
             <p className="font-semibold text-3xl max-w-lg mb-12">Better Agency/SEO Solution At Your Fingertips</p>
         </div>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
             <div className="shadow-lg rounded-[20px] p-7 flex flex-col items-center">
                 <Image
                     className='rounded-[#20px] pb-10'
