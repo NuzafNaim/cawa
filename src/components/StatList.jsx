@@ -2,9 +2,9 @@
 import { GrGroup } from 'react-icons/gr';
 
 const StatList = () => {
-  return <section className='md:container mx-auto'>
+  return <section className='container mx-auto'>
           {/* STATS LIST */}
-          <div className='flex justify-evenly	my-20'>
+          <div className='md:flex justify-evenly	my-20'>
         <div className="shadow-xl rounded-xl px-20 py-10">
           <div className='flex flex-col items-center'>
           <div className='bg-secbrand h-24 w-24 rounded-2xl flex items-center justify-center text-4xl mb-5'><GrGroup /></div>
