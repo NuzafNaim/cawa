@@ -23,7 +23,7 @@ const AllProject = async () => {
                     data.map((item, i) => {
                           return (
                                 <div key={i } className="shadow-lg rounded-[20px] p-7">
-                              <Image src={item['image']} alt="" height="472" width="544" />
+                              <Image className="rounded-xl" src={item['image']} alt="" height="472" width="544" />
                               <p className="font-semibold text-2xl pt-6 uppercase">{item['title']}</p>
                         </div>
                           )
