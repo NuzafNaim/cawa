@@ -1,20 +1,27 @@
-import Image from "next/image";
-import google from "../../public/img/brands/google.png"
-import trello from "../../public/img/brands/trello.png"
-import monday from "../../public/img/brands/monday.png"
-import notion from "../../public/img/brands/notion.png"
-import slack from "../../public/img/brands/slack.png"
+async function getData() {
+    const res=await fetch(process.env.BASE_URL+"BrandList");
+if (!res.ok) {
+    throw new Error("BrandList Calling Failed");
+    }
+    return res.json();
+}
+
+const BrandList = async () => {
+    const data = await getData();
 
 
-const BrandList = () => {
     return <section className="bg-[#F8FFF9]">
         <div className="container mx-auto py-10">
-            <div className="flex flex-col items-center gap-3 md:flex md:flex-row justify-between">
-            <Image src={google} alt=""/>
-            <Image src={trello} alt=""/>
-            <Image src={monday} alt=""/>
-            <Image src={notion} alt=""/>
-            <Image src={slack} alt=""/>
+        <div className="flex flex-col items-center gap-3 md:flex md:flex-row justify-between">
+                {
+                    data.map((item, i) => {
+                        return (
+                            
+                                <img key={i} src={item['image']} alt="" />
+                                
+                        )
+                    })
+                }
             </div>
         </div>
   </section>;

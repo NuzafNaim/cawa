@@ -1,5 +1,18 @@
 import Image from "next/image";
-const FeaturedProject = () => {
+
+
+async function getData() {
+  const res = await fetch(process.env.BASE_URL + 'FeaturedProject');
+  if (!res.ok) {
+    throw new Error('FeaturedProject Calling Error');
+  }
+  return res.json();
+}
+
+
+const FeaturedProject = async () => {
+  const data = await getData();
+  
   return <section className="bg-[#F0FDF4]">
     <div className="container mx-auto py-16 text-base">
       <div>
@@ -13,26 +26,18 @@ const FeaturedProject = () => {
         <p className="font-bold text-2xl">Redesign channel website landng page</p>
       </div>
         <div className="grid grid-cols-2 gap-5">
-        <div>
-        <Image src="/img/Mask1.png" alt="" height={188} width={287}/>
-        <p className="text-sm text-[#2E3E5C] mt-4 mb-2">App Design - June 20, 2022</p>
-        <p className="font-bold text-lg">Redesign channel website landng page</p>
+          {
+            data.map((item, i) => {
+              return (
+                <div key={i}>
+        <Image className="rounded-3xl" src={item["image"]} alt="" height={188} width={287}/>
+                  <p className="text-sm text-[#2E3E5C] mt-4 mb-2">{item["remark"]} - {item["created_at"]}</p>
+        <p className="font-bold text-lg">{item["title"]}</p>
           </div>
-          <div>
-        <Image src="/img/Mask1.png" alt="" height={188} width={287}/>
-        <p className="text-sm text-[#2E3E5C] mt-4 mb-2">App Design - June 20, 2022</p>
-        <p className="font-bold text-lg">Redesign channel website landng page</p>
-          </div>
-          <div>
-        <Image src="/img/Mask1.png" alt="" height={188} width={287}/>
-        <p className="text-sm text-[#2E3E5C] mt-4 mb-2">App Design - June 20, 2022</p>
-        <p className="font-bold text-lg">Redesign channel website landng page</p>
-          </div>
-          <div>
-        <Image src="/img/Mask1.png" alt="" height={188} width={287}/>
-        <p className="text-sm text-[#2E3E5C] mt-4 mb-2">App Design - June 20, 2022</p>
-        <p className="font-bold text-lg">Redesign channel website landng page</p>
-          </div>
+              )
+            })
+          }
+        
       </div>
     </div>
     </div>
