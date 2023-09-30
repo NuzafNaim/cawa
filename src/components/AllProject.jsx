@@ -6,7 +6,7 @@ const AllProject = () => {
   <p className="uppercase text-brand font-medium mb-4">Our All Project</p>
   <p className="font-semibold text-3xl max-w-lg mb-12">Better Agency/SEO Solution At Your Fingertips</p>
   </div>
-  <div className="grid grid-cols-2 gap-8">
+  <div className="md:grid grid-cols-2 gap-8">
     <div className="shadow-lg rounded-[20px] p-7">
           <Image src="/img/project.png" alt="" height="472" width="544" />
           <p className="font-semibold text-2xl pt-6 uppercase">Lorem ipsum dolor sit consectutar</p>

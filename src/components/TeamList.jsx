@@ -9,7 +9,7 @@ const TeamList = () => {
       <p className="uppercase text-brand font-medium mb-4">Our Team Member</p>
       <p className="font-semibold text-3xl max-w-lg mb-12">Check our awesome team members</p>
       </div>
-      <div className="flex gap-8">
+      <div className="md:flex gap-8">
         <div className="flex flex-col items-center gap-7 border-2 rounded-[20px]">
           <div className="relative">
             <div className="bg-white flex items-center gap-2 rounded-full px-8 py-4 text-gray-600 absolute top-[75%] left-[50%] translate-x-[-50%]"><FaFacebookF /> | <FaXTwitter /> | <FaInstagram /></div>
