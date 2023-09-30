@@ -9,7 +9,7 @@ import slack from "../../public/img/brands/slack.png"
 const BrandList = () => {
     return <section className="bg-[#F8FFF9]">
         <div className="container mx-auto py-10">
-            <div className="flex justify-between">
+            <div className="flex flex-col items-center gap-3 md:flex md:flex-row justify-between">
             <Image src={google} alt=""/>
             <Image src={trello} alt=""/>
             <Image src={monday} alt=""/>
