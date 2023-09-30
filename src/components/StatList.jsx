@@ -2,7 +2,7 @@
 import { GrGroup } from 'react-icons/gr';
 
 const StatList = () => {
-  return <section className='container mx-auto'>
+  return <section className='md:container mx-auto'>
           {/* STATS LIST */}
           <div className='flex justify-evenly	my-20'>
         <div className="shadow-xl rounded-xl px-20 py-10">

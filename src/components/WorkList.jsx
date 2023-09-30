@@ -10,7 +10,7 @@ const WorkList = () => {
         <p className="font-semibold text-3xl max-w-lg mb-6">We provide the Perfect Solution to your business growth</p>
       </div>
       {/* TOP WORKLIST */}
-      <div className='flex gap-11'>
+      <div className='md:flex gap-11'>
         <div className="group">
           <div className='px-6 py-20 hover:shadow-lg group-hover:rounded-4xl'>
           <div className='bg-secbrand h-24 w-24 rounded-2xl flex items-center justify-center text-4xl mb-5'><GrGroup /></div>
